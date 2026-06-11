@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>รายชื่อผู้สมัคร</title>
+</head>
+
+<body>
+
+<h1>รายชื่อผู้สมัครกีฬา</h1>
+
+<table border="1">
+
+<tr>
+    <th>ลำดับ</th>
+    <th>ชื่อ-นามสกุล</th>
+    <th>ชื่อเล่น</th>
+    <th>ห้อง</th>
+    <th>ระดับ</th>
+    <th>เพศ</th>
+    <th>กีฬา</th>
+    <th>เวลา</th>
+</tr>
+
+{% for student in students %}
+
+<tr>
+
+<td>{{ student[0] }}</td>
+
+<td>{{ student[1] }}</td>
+
+<td>{{ student[2] }}</td>
+
+<td>{{ student[3] }}</td>
+
+<td>{{ student[4] }}</td>
+
+<td>{{ student[5] }}</td>
+
+<td>{{ student[6] }}</td>
+
+<td>{{ student[7] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>

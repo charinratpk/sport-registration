@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครแข่งขันกีฬาสี</title>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #95e8ff;
+            color: #12005b;
+            margin: 5;
+            padding: 0;
+        }
+
+        /* ตกแต่งส่วนหัวของเนื้อหา */
+        h1 {
+            background-color: #002e6e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* ตกแต่งกล่องข้อความ */
+        .container {
+            width: 10%;
+            margin: 2px;
+            background-color: white;
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.13);
+        }
+
+        .container1 {
+            width: 13%;
+            margin: 2px;
+            background-color: white;
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.13);
+        }
+
+        .solution {
+            margin-bottom: 10px;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        .solution1 {
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        /* ตกแต่งปุ่มกด */
+        .btn {
+            display: inline-block;
+            background-color: #0008ffcb;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            background-color: #5eb7ff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>สมัครเข้าร่วมการแข่งขันกีฬาสี</h1>
+
+<form method="POST">
+
+    <p class="container">ชื่อ-นามสกุล</p>
+    <input class="solution" type="text" name="name" required>
+
+    <p class="container">ชื่อเล่น</p>
+    <input class="solution" type="text" name="nickname" required>
+
+    <p class="container1">ห้องเรียน เช่น 1/1</p>
+    <input class="solution" type="text" name="classroom" required>
+
+    <p class="container">ระดับชั้น</p>
+    <select class="solution" name="level">
+        <option>ม.ต้น</option>
+        <option>ม.ปลาย</option>
+    </select>
+
+    <p class="container">เพศ</p>
+    <select class="solution" name="gender">
+        <option>ชาย</option>
+        <option>หญิง</option>
+    </select>
+
+    <p class="container">กีฬา</p>
+    <select class="solution1" name="sport">
+        <option>ฟุตบอล</option>
+        <option>ฟุตซอล</option>
+        <option>เปตอง</option>
+        <option>ตะกร้อ</option>
+        <option>ปิงปอง</option>
+        <option>วอลเลย์บอล</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit" class="btn">
+        สมัคร
+    </button>
+
+</form>
+
+</body>
+</html>
